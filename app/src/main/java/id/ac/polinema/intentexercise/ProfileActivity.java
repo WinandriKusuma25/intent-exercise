@@ -61,7 +61,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void handleVisit(View view) {
-        Intent homepage = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        Intent homepage = new Intent(Intent.ACTION_VIEW, Uri.parse("http://"+url));
         startActivity(homepage);
     }
 }
